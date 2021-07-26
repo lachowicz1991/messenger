@@ -12,5 +12,5 @@ class User:
 		for message in self.messages:
 			formated_time = datetime.fromtimestamp(message.timestamp)
 			print(f'*    {message.from_user} - {formated_time.strftime("%m/%d/%y, %H:%M:%S")}')
-			print(f'		+message.text')
+			print(f'		{message.text}')
 			print()
